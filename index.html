@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Rock Paper Scissors</h1>
+        </header>
+        <main>
+            <article>
+                <p class="textbox">
+                    You have been invited you to play Rock, Paper Scissors. Although it sounds like a
+                    lovely invitation to play a game, you cannot avoid playing this game, as your life depends on it.
+                    You
+                    can choose how much rounds you want to play, but there is a limit to them. If you win, you will be
+                    invited to the golden land. But if you loose, your life will be taken as a sacrifice for the
+                    twilight of the golden witch...</p>
+            </article>
+            <section class="rounds">
+                <h3>How many rounds do you want to play?</h3>
+                <div id="roundchoices">
+                    <div>
+                        <input type="radio" name="rounds" id="five" value="5" checked="checked">
+                        <label for="five">5</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rounds" id="ten" value="10">
+                        <label for="ten">10</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rounds" id="fifteen" value="15">
+                        <label for="fifteen">15</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rounds" id="twenty" value="20">
+                        <label for="twenty">20</label>
+                    </div>
+                </div>
+                <div id="counterDisplay">
+                    <p id="currentRound"></p>
+                    <div>/</div>
+                    <p id="finalRound"></p>
+                </div>
+                <div id="rounds_display"></div>
+            </section>
+            <section class="score">
+                <p>You</p>
+                <p id="userScore"></p>
+                <div>:</div>
+                <p id="compScore"></p>
+                <p>Enemy</p>
+            </section>
+            <section id="hahaText">
+                <h2>Let's play for your dear life</h2>
+                <h2>hahahaha!</h2>
+            </section>
+            <section id="play">
+                <div>
+                    <p>Your choice:</p>
+                    <div id="myChoiceOutput"></div>
+                </div>
+                <div>
+                    <p>The witch's choice:</p>
+                    <div id="compChoiceOutput"></div>
+                </div>
+                <div>
+                    <h2 id="resultOutput"></h2>
+                </div>
+            </section>
+            <section id="buttons">
+                <div id="rock" onclick="battle('rock')"><img
+                        src="https://img.icons8.com/ios/100/000000/angry-fist--v2.png" alt="hand"></div>
+                <div id="paper" onclick="battle('paper')"><img
+                        src="https://img.icons8.com/ios/100/000000/sign-language-b.png" alt="hand"></div>
+                <div id="scissors" onclick="battle('scissors')"><img
+                        src="https://img.icons8.com/ios/100/000000/hand-scissors--v1.png" alt="hand"></div>
+            </section>
+            <h4 id="lastWill">Make your last wish . . . </h4>
+            <section id="popupEnd">
+                <h1 id="finalResultOutput"></h1>
+                <h3 onclick="newGame()">play again...</h3>
+            </section>
+        </main>
+        <footer>
+            <a target="_blank" href="https://icons8.com/icon/tlPbyvbhZ3ZC/fist">Fist icon by Icons8</a>
+            <a target="_blank" href="https://icons8.com/icon/116882/sign-language-b">Sign Language B icon by Icons8</a>
+            <a target="_blank" href="https://icons8.com/icon/44376/hand-scissors">Hand Scissors icon by Icons8</a>
+        </footer>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

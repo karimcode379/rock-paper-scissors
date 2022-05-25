@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Melted Monster';
+    src: url('../fonts/Melted_Monster.ttf');
+}
+
+@font-face {
+    font-family: 'who asks satan';
+    src: url('../fonts/who_asks_satan.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Code+Pro&display=swap');
+
+/* ================================ 
+        GENERAL STYLES
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202124;
+    color: #d6d6d6;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.wrapper {
+    width: 40%;
+    margin: 10vh 0;
+    text-align: center;
+    background-color: #36373A;
+}
+
+/* ================================ 
+        OVERALL STYLES
+================================ */
+h1 {
+    font-family: 'Melted Monster';
+    color: crimson;
+    font-size: 5rem;
+    padding: 30px 0 0 0;
+}
+
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3rem;
+    color: goldenrod;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 2.2rem;
+    margin: 20px;
+}
+
+h4 {
+    font-family: 'who asks satan';
+    font-size: 5rem;
+    color: crimson;
+    margin: 20px;
+}
+
+p {
+    font-size: 2rem;
+}
+
+img {
+    filter: invert(0.7);
+}
+
+/* ================================ 
+        MAIN STYLES
+================================ */
+.textbox {
+    margin: 20px;
+}
+
+.rounds {
+    border: 1px solid #d6d6d6;
+    margin: 20px;
+}
+
+#roundchoices {
+    font-size: 3rem;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    padding: 0 10%;
+}
+
+#roundchoices div {
+    margin: 20px;
+}
+
+#roundchoices div input[type=radio] {
+    width: 20px;
+    height: 3vh;
+}
+
+#counterDisplay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 0 4vh 0;
+}
+
+#counterDisplay * {
+    font-size: 5rem;
+}
+
+#counterDisplay p {
+    width: 15%;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d6d6d6;
+    margin: 20px;
+    padding: 10px 0;
+}
+
+.score * {
+    font-size: 3rem;
+}
+
+.score p {
+    width: 15%;
+}
+
+#hahaText,
+#play {
+    border: 1px solid goldenrod;
+}
+
+#play {
+    margin: 10px;
+    display: none;
+}
+
+#play div div {
+    font-size: 3rem;
+    color: crimson;
+
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin: 3vh 0;
+}
+
+#buttons div {
+    border: 5px solid #d6d6d6;
+    border-radius: 50%;
+    margin: 0 10px;
+    padding: 10px;
+    transition: transform 0.1s;
+}
+
+#buttons div:hover {
+    transition: transform 0.1s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#popupEnd {
+    display: none;
+}
+
+#popupEnd h3 {
+    cursor: pointer;
+}
+
+#popupEnd h3:hover {
+    text-decoration: underline;
+}
+
+/* ================================ 
+        hover classes for js
+================================ */
+.red {
+    animation-name: redAnimation;
+    animation-duration: 1s;
+}
+
+@keyframes redAnimation {
+    0% {
+        border-color: #d6d6d6;
+        background-color: none;
+    }
+
+    50% {
+        border-color: crimson;
+        background-color: crimson;
+    }
+
+    100% {
+        border-color: #d6d6d6;
+        background-color: none;
+    }
+}
+
+.green {
+    animation-name: greenAnimation;
+    animation-duration: 1s;
+}
+
+@keyframes greenAnimation {
+    0% {
+        border-color: #d6d6d6;
+        background-color: none;
+    }
+
+    50% {
+        border-color: green;
+        background-color: green;
+    }
+
+    100% {
+        border-color: #d6d6d6;
+        background-color: none;
+    }
+}
+
+.grey {
+    animation-name: greyAnimation;
+    animation-duration: 1s;
+}
+
+@keyframes greyAnimation {
+    0% {
+        border-color: #d6d6d6;
+        background-color: none;
+    }
+
+    50% {
+        border-color: grey;
+        background-color: grey;
+    }
+
+    100% {
+        border-color: #d6d6d6;
+        background-color: none;
+    }
+}
